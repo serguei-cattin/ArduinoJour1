@@ -1,0 +1,17 @@
+void setup() {                
+  // Initialise la sortie numérique de la LED
+  pinMode(8, OUTPUT);     
+}
+
+// La routine du loop se répète à l'infini
+void loop() {
+  digitalWrite(8, HIGH);     // Allume la LED (HIGH est le niveau de tension)
+  delay(1000);
+  digitalWrite(8, LOW);     // Allume la LED (HIGH est le niveau de tension)
+  delay(1000);                // Attendre 1000ms = 1s
+  digitalWrite(9, HIGH);      // Eteint la LED en mettant la tension à LOW
+  delay(1000);
+                // Attendre 1000ms = 1s
+  digitalWrite(9, LOW);      // Eteint la LED en mettant la tension à LOW
+  delay(1000);               // Attendre 1000ms = 1s
+}
